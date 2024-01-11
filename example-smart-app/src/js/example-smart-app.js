@@ -66,7 +66,9 @@
         onError();
       }
     }
-
+    console.log("previous_message");
+    console.log("data onReady",onReady);
+    console.log("data onError",onError);
     FHIR.oauth2.ready(onReady, onError);
     return ret.promise();
 
